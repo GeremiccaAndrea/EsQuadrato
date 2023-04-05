@@ -34,7 +34,9 @@ def SceltaArea_E_Diagonale():
   area = lato **2 
   diagonale = lato * math.sqrt(2)
   if area in scelta and diagonale in scelta:
-    return render_template('area_e_diagonale', lato = lato, area = area, diagonale = diagonale)
+     area = lato **2 
+     diagonale = lato * math.sqrt(2)
+     return render_template('area_e_diagonale', lato = lato, area = area, diagonale = diagonale)
   elif diagonale in scelta:
     diagonale = lato * math.sqrt(2)
     return render_template('diagonaleQuadrato.html', lato = lato, diagonale = diagonale)
