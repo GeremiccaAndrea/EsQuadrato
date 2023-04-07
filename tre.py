@@ -6,15 +6,6 @@ app = Flask(__name__)
 def home():
   return render_template('tre_3.html')
 
-@app.route('/AreaQuadrato')
-def AreaQuadrato():
-    lato = int(request.args.get('lato'))
-    area = lato **2 
-    if lato == 0:
-        return('Errore')
-    else:
-        return render_template('areaQuadrato.html', lato = lato, area = area)
-
 
 @app.route('/SceltaArea_Diagonale')
 def SceltaArea_Diagonale():

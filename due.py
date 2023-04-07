@@ -3,9 +3,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-  return render_template('uno_1.html')
+  return render_template('due_2.html')
 
-@app.route('/AreaQuadrato', methods = ["POST"])
+@app.route('/AreaQuadrato', methods = ["GET"])
 def AreaQuadrato():
     lato = int(request.args.get('lato'))
     area = lato **2
