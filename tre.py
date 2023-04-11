@@ -14,9 +14,9 @@ def SceltaArea_Diagonale():
   area = lato **2 
   diagonale = lato * math.sqrt(2)
   if scelta == 'Area':
-    return render_template('areaQuadrato.html', lato = lato, area = area)
+    return render_template('areaQuadrato.html', lato = lato, Area = area)
   else:
-    return render_template('diagonaleQuadrato.html', lato = lato, diagonale = diagonale)
+    return render_template('diagonaleQuadrato.html', lato = lato, Diagonale = diagonale)
 
 
 

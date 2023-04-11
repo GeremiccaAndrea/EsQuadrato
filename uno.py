@@ -9,7 +9,7 @@ def home():
 def AreaQuadrato():
     lato = int(request.args.get('lato'))
     area = lato **2
-    return render_template('areaQuadrato.html', lato = lato, area = area)
+    return render_template('areaQuadrato.html', lato = lato, Area = area)
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=3245, debug=True)
